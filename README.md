@@ -118,7 +118,7 @@ Adding Library
 You just add the following dependency to your build.gradle:
 ```groovy
  dependencies {
-    implementation 'com.hijamoya:keyboardview:0.0.2@aar'
+    implementation 'com.hijamoya:keyboardview:0.0.3'
   }
 ```
 

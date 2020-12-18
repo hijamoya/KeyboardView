@@ -36,7 +36,7 @@ ext {
     siteUrl = 'https://github.com/hijamoya/KeyboardView'
     gitUrl = 'https://github.com/hijamoya/KeyboardView.git'
 
-    libraryVersion = '0.0.2'
+    libraryVersion = '0.0.3'
 
     developerId = 'hijamoya'
     developerName = 'Jam Hsu'
