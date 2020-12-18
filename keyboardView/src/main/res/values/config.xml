@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Enables swipe versus poly-finger touch disambiguation in the KeyboardView -->
+    <bool name="config_swipeDisambiguation">true</bool>
+</resources>
