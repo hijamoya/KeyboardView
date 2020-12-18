@@ -1,0 +1,48 @@
+buildscript {
+    ext.kotlin_version = "1.4.10"
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:4.1.1"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath 'com.github.dcendents:android-maven-gradle-plugin:2.1'
+        classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.8.5'
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+ext {
+    bintrayRepo = 'maven'
+    bintrayName = 'KeyboardView'
+
+    publishedGroupId = 'com.hijamoya'
+    libraryName = 'KeyboardView'
+    artifact = 'keyboardview'
+
+    libraryDescription = 'Since KeyboardView was deprecated in API level 29. Google recommends to copy the file to your project.'
+
+    siteUrl = 'https://github.com/hijamoya/KeyboardView'
+    gitUrl = 'https://github.com/hijamoya/KeyboardView.git'
+
+    libraryVersion = '0.0.2'
+
+    developerId = 'hijamoya'
+    developerName = 'Jam Hsu'
+    developerEmail = 'hijamoya@gmail.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
