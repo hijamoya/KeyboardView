@@ -13,7 +13,7 @@ This library remove accessibility support, if you need that, you may find other 
 
 Usage
 -----
-You should replace `KeyboardView` attributes in "android" namespace to the third party namespace "app".
+You should replace `KeyboardView` attributes of "android" namespace to the third party namespace "app".
 
 Replace the deprecated KeyboardView: 
 ```xml
