@@ -46,6 +46,7 @@ import android.graphics.drawable.Drawable;
 import com.hijamoya.keyboardview.Keyboard.Key;
 
 import android.os.Handler;
+import android.os.Looper;
 import android.os.Message;
 import android.util.AttributeSet;
 import android.util.Log;
@@ -377,7 +378,7 @@ public class KeyboardView extends View implements View.OnClickListener {
         super.onAttachedToWindow();
         initGestureDetector();
         if (mHandler == null) {
-            mHandler = new Handler() {
+            mHandler = new Handler(Looper.getMainLooper()) {
                 @Override
                 public void handleMessage(Message msg) {
                     switch (msg.what) {
@@ -1033,8 +1034,7 @@ public class KeyboardView extends View implements View.OnClickListener {
         mDirtyRect.union(key.x + paddingLeft, key.y + paddingTop,
                 key.x + key.width + paddingLeft, key.y + key.height + paddingTop);
         onBufferDraw();
-        invalidate(key.x + paddingLeft, key.y + paddingTop,
-                key.x + key.width + paddingLeft, key.y + key.height + paddingTop);
+        invalidate();
     }
 
     private boolean openPopupIfRequired(MotionEvent me) {
