@@ -336,7 +336,7 @@ public class KeyboardView extends View implements View.OnClickListener {
             }
         }
 
-        mBackgroundDimAmount = 0.5f;
+        mBackgroundDimAmount = 0.6f;
 
         mPreviewPopup = new PopupWindow(context);
         if (previewLayout != 0) {
