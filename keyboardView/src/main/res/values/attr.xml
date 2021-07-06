@@ -25,7 +25,7 @@
         <!-- Layout resource for popup keyboards -->
         <attr name="popupLayout" format="reference" />
         <attr name="shadowColor" format="color" />
-        <attr name="shadowRadius" format="string" />
+        <attr name="shadowRadius" format="float" />
     </declare-styleable>
     <declare-styleable name="KeyboardViewPreviewState">
         <!-- State for {@link android.inputmethodservice.KeyboardView KeyboardView}
