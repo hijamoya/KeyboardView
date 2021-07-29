@@ -116,8 +116,14 @@ Adding Library
 -----
 ```groovy
  dependencies {
-    implementation 'com.hijamoya:keyboardview:0.0.3'
+    implementation 'io.github.hijamoya:keyboardview:0.0.2'
   }
+```
+
+Publish
+-----
+```groovy
+./gradlew keyboardView:publishReleasePublicationToSonatypeRepository
 ```
 
 License

@@ -2,10 +2,16 @@ plugins {
     id 'com.android.library'
     id 'kotlin-android'
     id 'com.github.dcendents.android-maven'
-    id 'com.jfrog.bintray'
 }
 
-apply from: 'https://raw.githubusercontent.com/LissF/JCenter/master/script.gradle'
+ext {
+    // Provide your own coordinates here
+    PUBLISH_GROUP_ID = 'io.github.hijamoya'
+    PUBLISH_VERSION = '0.0.2'
+    PUBLISH_ARTIFACT_ID = 'keyboardview'
+}
+
+apply from: "${rootProject.projectDir}/scripts/publish-module.gradle"
 
 android {
     compileSdkVersion 30
@@ -39,7 +45,6 @@ android {
 tasks.withType(Javadoc).all { enabled = false }
 
 dependencies {
-
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
     implementation 'androidx.core:core-ktx:1.3.2'
     implementation 'androidx.appcompat:appcompat:1.2.0'
