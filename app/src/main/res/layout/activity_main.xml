@@ -18,19 +18,12 @@
 
     <com.hijamoya.keyboardview.KeyboardView
         android:id="@+id/keyboardview"
+        style="@style/KeyboardView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:focusable="true"
         android:focusableInTouchMode="true"
         android:paddingTop="12dp"
-        android:paddingBottom="12dp"
-        app:keyBackground="@drawable/key_bg"
-        app:keyTextColor="@android:color/black"
-        app:keyTextSize="20sp"
-        app:labelTextSize="15sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:shadowColor="@android:color/transparent" />
+        android:paddingBottom="12dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
